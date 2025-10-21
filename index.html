@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+  <body>
+    <h1 class="title">🌤️ Weather App</h1>
+
+    <div class="card">
+      <div class="search">
+        <input type="text" placeholder="Enter your city" spellcheck="false" />
+        <button>
+          <i
+            class="fa-solid fa-magnifying-glass fa-2x"
+            style="color: #b197fc"
+          ></i>
+        </button>
+      </div>
+
+   <div class="erro-masseg"></div>
+
+      <div class="weather" style="display: none;">
+        <!-- <i class="fa-solid fa-cloud-sun-rain fa-5x weather-icon" style="color: #fff01e"></i> -->
+         <div class="weather-icon"></div>
+          <div class="description"></div>
+         
+
+        <h1 class="temp"></h1>
+        <h2 class="city"></h2>
+        <div class="details">
+          <div class="col">
+            <i
+              class="fa-solid fa-water fa-3x one "
+              style="color: white;"
+            ></i>
+            <div class="info">
+            <p class="humidity"></p>
+            <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            
+           <i class="fa-solid fa-wind fa-3x" style="color: #ffffff;"></i>
+              <div class="info">
+            <p class="wind"></p>
+            <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="extra">
+  <div class="col">
+    
+    <i class="fa-solid fa-temperature-high fa-3x"></i>
+    <div class="info">
+            <p class="feel"></p>
+            <p>Feels like</p>
+    </div>
+  </div>
+  <div class="col">
+    <i class="fa-solid fa-tachometer-alt fa-3x"></i>
+     <div class="info">
+            <p class="press"></p>
+            <p>Pressure</p>
+    </div>
+  </div>
+  <div class="col">
+    <i class="fa-solid fa-sun fa-3x"></i>
+     <div class="info">
+            <p class="sun"></p>
+            <p>Sunrise</p>
+    </div>
+</div>
+  <div class="col">
+    <i class="fa-solid fa-moon fa-3x"></i>
+     <div class="info">
+            <p class="sunset"></p>
+            <p>Sunset</p>
+    </div>
+</div>
+</div>
+
+      </div>
+    </div>
+
+
+
+<script src="weather.js"></script>
+  </body>
+</html>
